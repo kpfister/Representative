@@ -15,6 +15,8 @@
 		7572E3421D076D7000AAF20F /* RepresentitiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E3411D076D7000AAF20F /* RepresentitiveTests.swift */; };
 		7572E34D1D076D7000AAF20F /* RepresentitiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E34C1D076D7000AAF20F /* RepresentitiveUITests.swift */; };
 		7572E35B1D076DA100AAF20F /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E35A1D076DA100AAF20F /* Representative.swift */; };
+		75FA732D1D07785A009F1219 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA732C1D07785A009F1219 /* NetworkController.swift */; };
+		75FA73301D0778AE009F1219 /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA732F1D0778AE009F1219 /* RepresentativeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7572E34C1D076D7000AAF20F /* RepresentitiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentitiveUITests.swift; sourceTree = "<group>"; };
 		7572E34E1D076D7000AAF20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7572E35A1D076DA100AAF20F /* Representative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Representative.swift; path = ../Representative.swift; sourceTree = "<group>"; };
+		75FA732C1D07785A009F1219 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		75FA732F1D0778AE009F1219 /* RepresentativeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,14 @@
 		7572E32B1D076D7000AAF20F /* Representitive */ = {
 			isa = PBXGroup;
 			children = (
+				75FA732E1D07786F009F1219 /* Controllers */,
 				7572E35C1D07773D00AAF20F /* Model  */,
 				7572E32C1D076D7000AAF20F /* AppDelegate.swift */,
 				7572E32E1D076D7000AAF20F /* ViewController.swift */,
 				7572E3301D076D7000AAF20F /* Main.storyboard */,
 				7572E3331D076D7000AAF20F /* Assets.xcassets */,
 				7572E3351D076D7000AAF20F /* LaunchScreen.storyboard */,
+				75FA732F1D0778AE009F1219 /* RepresentativeController.swift */,
 				7572E3381D076D7000AAF20F /* Info.plist */,
 			);
 			path = Representitive;
@@ -134,6 +140,14 @@
 				7572E35A1D076DA100AAF20F /* Representative.swift */,
 			);
 			name = "Model ";
+			sourceTree = "<group>";
+		};
+		75FA732E1D07786F009F1219 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				75FA732C1D07785A009F1219 /* NetworkController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FA73301D0778AE009F1219 /* RepresentativeController.swift in Sources */,
+				75FA732D1D07785A009F1219 /* NetworkController.swift in Sources */,
 				7572E32F1D076D7000AAF20F /* ViewController.swift in Sources */,
 				7572E32D1D076D7000AAF20F /* AppDelegate.swift in Sources */,
 				7572E35B1D076DA100AAF20F /* Representative.swift in Sources */,
@@ -496,6 +512,7 @@
 				7572E3531D076D7000AAF20F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7572E3541D076D7000AAF20F /* Build configuration list for PBXNativeTarget "RepresentitiveTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +521,7 @@
 				7572E3561D076D7000AAF20F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7572E3571D076D7000AAF20F /* Build configuration list for PBXNativeTarget "RepresentitiveUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +530,7 @@
 				7572E3591D076D7000AAF20F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
