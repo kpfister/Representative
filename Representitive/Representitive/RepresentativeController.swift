@@ -25,7 +25,8 @@ class RepresentativeController {
         let url = searchURLByState(searchTerm)
         
         // Step 2: Use that complete URL to get data from the network by passing it into our performRequestForURL
-        NetworkController.performRequestForURL(url, httpMethod: .Get) { (data, error) in
+        
+        NetworkController.performRequestForURL(url) { (data, error) in
             
             // Step 3: Alright... I have my data...well, hopefully. lets check/guard against it
             
